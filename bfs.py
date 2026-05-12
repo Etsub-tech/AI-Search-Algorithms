@@ -26,15 +26,3 @@ def bfs(graph, start, goal):
     return None, order
 
 
-# TESTING
-graph = {
-    'A': [('B', 2), ('C', 5)],
-    'B': [('D', 1)],
-    'C': [('D', 3)],
-    'D': []
-}
-
-path, order = bfs(graph, 'A', 'D')
-
-print("Path:", path)
-print("Expansion Order:", order)
